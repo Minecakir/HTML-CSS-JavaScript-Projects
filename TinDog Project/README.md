@@ -1,7 +1,7 @@
 # TinDog-Bootstrap-
 Bootstrap Project in Web Development Course by Angela Yu
  <p>
-         Go To <a href="https://minecakir.github.io/TinDog-Bootstrap/">Website</a> 
+         Go To <a href="https://minecakir.github.io/HTML-CSS-JavaScript-Projects/TinDog%20Project/">Website</a> 
 </p>
  
  <p>   &emsp;&emsp;&emsp; </p >
