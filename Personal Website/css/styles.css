@@ -1,0 +1,237 @@
+html, body{
+  box-sizing: border-box;
+  margin:0;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity:0.6;
+  padding-left:1rem;
+}
+
+.nav-container h1{
+  color:white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#navbar{
+  position: fixed;
+  background-color: #535152;
+}
+
+.nav-container li, a, button{
+  text-decoration: none;
+}
+
+.nav-container a{
+  color: white;
+}
+
+.nav-list{
+  list-style: none;
+}
+
+.nav-list li{
+  display: inline-block;
+  padding:5px 20px;
+  text-decoration: underline;
+}
+
+.nav-container{
+  width: 100%;
+}
+
+header{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding:30px 50px;
+  text-align: center;
+  font-size: large;
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: underline;
+}
+
+.welcome-section, .images, .experience {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* max-width: 68.75rem; */
+  margin: auto;
+  background-color: #fcf5f5;
+  margin-top:20px;
+  padding:10px;
+  gap: 2rem;
+
+}
+
+.welcome-section img{
+  height: 30rem;
+  width: auto;
+}
+
+.work-logo{
+  height: 2rem;
+  width: auto;
+}
+
+.rescience-logo{
+  height: 4rem;
+  width: auto;
+}
+
+.prj{
+  height: 10rem;
+  width: auto;
+}
+
+.work-desc{
+  width:50rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+}
+
+.bio{
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+}
+
+.act-desc{
+  width: 70rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+}
+
+.bio h1, .experience h1 {
+  margin-bottom: var(--bottom-margin);
+}
+
+.bio p, .experience p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+}
+
+.bio-title{
+  color: #535152;
+  font-size: 80px;
+  font-family: 'Qwitcher Grypen', cursive;
+}
+
+.contact-btn{
+  background-color: #535152;
+  color:white;
+  padding:8px 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: smaller;
+}
+
+.about {
+  background-color: #fcf5f5;
+  margin-top: 100px;
+  padding:50px;
+}
+
+.section-title {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  color: #535152;
+  font-size: 40px;
+}
+
+.about p{
+  line-height: var(--line-height);
+  padding: 0.3rem 8rem;
+  text-align: center;
+  color: #535152;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .about p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+  }
+}
+/* PROJECTS SECTION */
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img{
+  height:300px;
+}
+
+.card{
+  padding:30px;
+  justify-content: center;
+  text-align: center;
+  background-color: #EBEBEB;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+  width: 500px;
+}
+
+.project-desc{
+  color: #535152;
+}
+
+.project-title a,.project-title, .act-title{
+  font-family: 'Quicksand', sans-serif;
+  color:#ed217c;
+  padding: 10px;
+  font-weight:700;
+}
+
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skills-wrapper img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 6.875rem;
+  height: 6.25rem;
+}
+
+.activities-section, .contact-section, .projects-section, .work-section{
+  background-color: #fcf5f5;
+  padding: 30px;
+  margin-top:50px;
+}
+
+.contact-details{
+  color:#535152;
+  padding:20px;
+}
+
+.contact-links{
+  text-align: center;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.experience-title{
+  color:red;
+}
+
+.activities-section img{
+  height:400px;
+}
