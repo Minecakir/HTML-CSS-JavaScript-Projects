@@ -71,7 +71,8 @@ header{
 }
 
 .bio{
-  width: 25rem;
+  width:100%;
+  max-width: 300px;
   padding: 0.625rem;
   border-radius: 6px;
 }
