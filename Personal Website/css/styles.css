@@ -4,10 +4,8 @@ html, body{
 }
 
 nav {
-  position: sticky;
   top: 0;
   left: 0;
-  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,7 +19,6 @@ nav {
 }
 
 #navbar{
-  position: fixed;
   background-color: #535152;
 }
 
@@ -40,7 +37,7 @@ nav {
 .nav-list li{
   display: inline-block;
   padding:5px 20px;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .nav-container{
@@ -49,13 +46,10 @@ nav {
 
 header{
   display: flex;
-  justify-content:space-around;
   align-items: center;
-  padding:30px 50px;
   text-align: center;
   font-size: large;
   font-family: 'Quicksand', sans-serif;
-  text-decoration: underline;
 }
 
 .welcome-section, .images, .experience {
@@ -63,18 +57,43 @@ header{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  /* max-width: 68.75rem; */
   margin: auto;
   background-color: #fcf5f5;
-  margin-top:20px;
-  padding:10px;
   gap: 2rem;
-
+  padding-bottom:20px;
 }
 
 .welcome-section img{
-  height: 30rem;
+  height: 100%;
+  max-height: 400px;
   width: auto;
+  margin-top:10px;
+}
+
+.bio{
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+}
+.bio h1, .experience h1 {
+  margin-bottom: var(--bottom-margin);
+}
+
+.bio p, .experience p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+}
+
+.bio-title{
+  color: #535152;
+  font-size: 80px;
+  font-family: 'Qwitcher Grypen', cursive;
+}
+
+.about {
+  background-color: #fcf5f5;
+  margin-top: 100px;
+  padding:50px;
 }
 
 .work-logo{
@@ -98,31 +117,10 @@ header{
   border-radius: 6px;
 }
 
-.bio{
-  width: 25rem;
-  padding: 0.625rem;
-  border-radius: 6px;
-}
-
 .act-desc{
   width: 70rem;
   padding: 0.625rem;
   border-radius: 6px;
-}
-
-.bio h1, .experience h1 {
-  margin-bottom: var(--bottom-margin);
-}
-
-.bio p, .experience p {
-  line-height: var(--line-height);
-  padding: 0.3rem 0;
-}
-
-.bio-title{
-  color: #535152;
-  font-size: 80px;
-  font-family: 'Qwitcher Grypen', cursive;
 }
 
 .contact-btn{
@@ -131,12 +129,6 @@ header{
   padding:8px 15px;
   font-family: 'Poppins', sans-serif;
   font-size: smaller;
-}
-
-.about {
-  background-color: #fcf5f5;
-  margin-top: 100px;
-  padding:50px;
 }
 
 .section-title {
@@ -167,8 +159,10 @@ header{
   justify-content: center;
 }
 
-img{
-  height:300px;
+.project-image{
+  width:100%;
+  max-width:400px;
+  height: auto;
 }
 
 .card{
@@ -178,9 +172,9 @@ img{
   background-color: #EBEBEB;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
-  padding: 20px;
   margin: 10px;
-  width: 500px;
+  width:100%;
+  max-width: 400px;
 }
 
 .project-desc{
@@ -212,8 +206,9 @@ img{
 
 .activities-section, .contact-section, .projects-section, .work-section{
   background-color: #fcf5f5;
-  padding: 30px;
-  margin-top:50px;
+  /* padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top:50px; */
 }
 
 .contact-details{
@@ -232,6 +227,14 @@ img{
   color:red;
 }
 
-.activities-section img{
-  height:400px;
+.act-img{
+  width:100%;
+  max-width: 500px;
+  height:auto;
+}
+
+.act-ver-img{
+  height:100%;
+  max-height: 500px;
+  max-width:300px;
 }
